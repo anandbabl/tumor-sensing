@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tumor-sensing-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: RENDER
+        value: "true"
+      - key: FORCE_LIGHTWEIGHT_INFERENCE
+        value: "true"
