@@ -7,6 +7,13 @@
 .env*
 !.env.example
 *.env
+.enb
+.enb*
+*.enb
+frontend/.env*
+!frontend/.env.example
+backend/.env*
+!backend/.env.example
 *.pem
 *.key
 *.cert

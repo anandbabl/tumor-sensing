@@ -52,30 +52,19 @@
 
 ---
 
-## 🎨 UI/UX Design & Navigation
+## 🎨 UI/UX Design & Architecture
 
-The platform follows a dark medical aesthetic:
-- **Main Background:** `#080B14`
-- **Secondary Background:** `#101626`
-- **Card Background:** `#151D30`
-- **Primary Violet Accent:** `#8B5CF6`
-- **Cyan Glowing Accent:** `#22D3EE`
-- **Success / Warning / Error:** `#22C55E` / `#F59E0B` / `#EF4444`
-
-### 10-Item Sidebar Navigation
-
-| # | Item | Route | Description |
-|---|---|---|---|
-| 1 | **Overview Dashboard** | `/dashboard` | High-level KPI telemetry, prediction charts, recent scans |
-| 2 | **New MRI Analysis** | `/analyze` | Diagnostic workspace, file upload, image manipulator & docked assistant |
-| 3 | **Prediction History** | `/history` | Searchable audit log, filter by tumor class, PDF report download |
-| 4 | **Patient Management** | `/patients` | Full clinical patient registry (CRUD), demographics, notes |
-| 5 | **AI Medical Assistant** | `/assistant` | Full-screen interactive neuro-oncology clinical consultation |
-| 6 | **Analytics & Reports** | `/analytics` & `/reports` | Aggregate epidemiological telemetry and generated PDF archives |
-| 7 | **Model Performance** | `/performance` | CNN telemetry, confusion matrix, ROC-AUC, and Quantum QML specs |
-| 8 | **Research & Information** | `/research` | Educational compendium on Glioma, Meningioma, Pituitary, MRI physics, and QML |
-| 9 | **Settings** | `/settings` | User profile, password management, Groq API key configuration, system info |
-| 10 | **Logout** | — | Secure session termination and credential purging |
+The platform features a modern, clinical **Liquid-Glass Design System**:
+- **Looping Video Scrim**: High-definition neural cranial video background with dynamic ambient scrim for contrast and depth.
+- **Translucent Glassmorphism (`.liquid-glass`)**: Frosted blur, subtle gradient borders via CSS `mask-composite: exclude`, inset highlights, and interactive hover glow states (`.liquid-glass-interactive`). Zero solid black void boxes.
+- **Typography & Aesthetics**: Inter font with tight letter-tracking, minimalist custom SVG emblems, and floating liquid-glass navigation pills.
+- **Top-Right Profile Hub**: Instant access to:
+  - **Operator Profile** (`/profile`): Verified practitioner credentials (#RAD-8824), neuro-radiology permissions, EfficientNetB3 core allocation, and encrypted session telemetry.
+  - **Prediction History** (`/history`): Telemetry case archive, liquid-glass filter pills (Glioma, Meningioma, Pituitary), search bar, and Grad-CAM spatial activation modal.
+  - **Clinical Reports** (`/reports`): Translucent report table, formal PDF downloads, confidence ratings, and clinical disclaimers.
+  - **Tele-Radiology Consult** (`/consult`): Second opinion portal with standard 24h & urgent (&lt;2h) escalation tiers.
+  - **System Help** (`/help`): Step-by-step scanning guide, Grad-CAM hotspot color interpretation, model specifications, and AI assistant prompt guide.
+  - **Settings** (`/settings`): Custom Groq API key configuration for LLaMA 3.3, practitioner profile updater, and system runtime specifications.
 
 ---
 
