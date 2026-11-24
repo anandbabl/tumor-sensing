@@ -1,7 +1,7 @@
 # 🚀 Production Deployment Guide
 ## Quantum Tumor Sensing Machine — Full-Stack Deployment
 
-**GitHub Target:** `https://github.com/anandbabl/quantum-tumor-sensing-machine.git`  
+**GitHub Target:** `https://github.com/anandbabl/tumor-sensing.git`  
 **Frontend Host:** Vercel (Next.js 16.4.4 App Router)  
 **Backend Host:** Render, Railway, Fly.io, or Docker (FastAPI + EfficientNetB3 Keras Model)  
 
@@ -64,20 +64,20 @@ git push -u origin main
 
 1. Log in to [Vercel](https://vercel.com).
 2. Click **Add New...** ➜ **Project**.
-3. Import your GitHub repository: `anandbabl/quantum-tumor-sensing-machine`.
+3. Import your GitHub repository: `anandbabl/tumor-sensing`.
 4. In the Project Configuration screen:
    - **Framework Preset:** Next.js
    - **Root Directory:** Click `Edit` and select `frontend`.
    - **Build Command:** `npm run build` (Automatically runs `prebuild` to compile CSS).
    - **Output Directory:** `.next`
-   - **Install Command:** `npm install --legacy-peer-deps`
+   - **Install Command:** `npm install`
 5. **Environment Variables:**
    - Add:
      ```
      NEXT_PUBLIC_API_URL = https://your-backend-service.onrender.com
      ```
      *(Use your deployed backend URL from Step 4 below)*.
-6. Click **Deploy**. Vercel will build and assign you a production URL (e.g., `https://quantum-tumor-sensing-machine.vercel.app`).
+6. Click **Deploy**. Vercel will build and assign you a production URL (e.g., `https://tumor-sensing.vercel.app`).
 
 ---
 
